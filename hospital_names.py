@@ -104,7 +104,7 @@ def main():
 	while(True):
 		# Entering inital seed text
 		seed_text = input("Enter seed text(Type Exit to quit): ")
-		if text.lower() == 'exit':
+		if seed_text.lower() == 'exit':
 			break
 		in_text = generate_seq(model,mapping,length,seed_text,40)
 		# Printing newly obtained hospital names
