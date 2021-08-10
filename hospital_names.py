@@ -109,7 +109,7 @@ def main():
 		in_text = generate_seq(model,mapping,length,seed_text,40)
 		# Printing newly obtained hospital names
 		print("Newly generated hospital names are:\n")
-		print("in_text")
+		print(in_text)
 
 if __name__ == "__main__":
     """ This is executed when run from the command line """
