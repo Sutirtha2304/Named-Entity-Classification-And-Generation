@@ -84,7 +84,7 @@ def generate_seq(model, mapping, seq_length, seed_text, n_chars):
 		# One hot encoding
 		encoded = to_categorical(encoded, num_classes=len(mapping))
 		# Predicting next character
-		yhat = model.predict_classes(np.array([encoded]), verbose=0)
+		yhat = model.predict_classes(encoded, verbose=0)
 		# Reversing map integer to character
 		out_char = ''
 		for char, index in mapping.items():
