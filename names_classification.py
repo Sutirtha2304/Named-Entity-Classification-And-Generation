@@ -94,7 +94,7 @@ def model_building(hosp_file,name_file):
 
 	X_test, y_test = test[:,:-1], test[:,-1]
 	sequences = [to_categorical(x, num_classes=vocab_size) for x in X_test]
-	X_test = array(sequences)
+	X_test = np.array(sequences)
 	y_test = to_categorical(y_test, num_classes=2)
 
 	#Calculating no. of hidden nodes
